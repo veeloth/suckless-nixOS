@@ -342,11 +342,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-Y9X5cznkycdLMozICMCosrX5Li2+rclgdBNTPQXA4sM=",
-        "path": "./pkgs/vebar",
+        "path": "pkgs/vebar",
         "type": "path"
       },
       "original": {
-        "path": "./pkgs/vebar",
+        "path": "pkgs/vebar",
         "type": "path"
       }
     }
