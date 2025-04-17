@@ -10,7 +10,6 @@ environment.systemPackages = with pkgs;
     fastfetch feh gh git gpick hmcl librewolf
     mtpaint nasm neovim vlc obsidian
     osu-lazer-bin pamixer pandoc qemu scrot
-    signal
     (st.overrideDerivation
       (old: {
       src = ./st;
