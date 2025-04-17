@@ -1,7 +1,11 @@
 { config, lib, pkgs, vebar, ... }:
 
 let
-  localPkgs = [ vebar.packages."x86_64-linux".default ];
+  localPkgs =
+    [
+    vebar.packages."x86_64-linux".default
+    (import ../vlth/shell.nix {inherit pkgs;} )
+    ];
 in
 {
 environment.systemPackages = with pkgs;
