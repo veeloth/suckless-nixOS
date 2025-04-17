@@ -1569,7 +1569,6 @@ setup(void)
 {
 	system("vebar &disown");
 	system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
-	system("discord &disown && librewolf &disown")
 	int i;
 	XSetWindowAttributes wa;
 	Atom utf8string;
