@@ -4,7 +4,6 @@ let
   localPkgs =
     [
     vebar.packages."x86_64-linux".default
-    (import ../vlth/shell.nix {inherit pkgs;} )
     ];
 in
 {
