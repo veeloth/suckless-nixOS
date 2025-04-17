@@ -6,7 +6,7 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    btop binutils_nogold dmenu
+    btop binutils_nogold dissent dmenu
     fastfetch feh gh git gpick hmcl kitty librewolf
     mtpaint nasm neovim vlc obsidian
     osu-lazer-bin pamixer pandoc qemu scrot
