@@ -1568,6 +1568,8 @@ void
 setup(void)
 {
 	system("vebar &disown");
+	system("discord &disown");
+	system("librewolf &disown");
 	system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
 	int i;
 	XSetWindowAttributes wa;
