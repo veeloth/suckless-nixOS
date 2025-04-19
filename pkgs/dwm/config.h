@@ -5,7 +5,7 @@
 static const void startup()
   {
   system("vebar &disown");
-  system("vestkop &disown");
+  system("vesktop &disown");
   system("librewolf &disown");
   system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
   system("nhkd &disown");
@@ -29,14 +29,14 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "scientifica:pixelsize=22:antialias=false" };
 static const char dmenufont[]       = "scientifica:pixelsize=22:antialias=false";
 static const char col_gray1[]       = "#1e1d1c";
-static const char col_gray2[]       = "#1e1d1c";
+static const char col_gray2[]       = "#e5e0cf";
 static const char col_gray3[]       = "#e5e0cf";
 static const char col_gray4[]       = "#1e1d1c";
-static const char col_focus[]       = "#e5e0cf";
+static const char col_focus[]       = "#a5ffa5";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_focus,  col_focus  },
+	[SchemeSel]  = { col_gray4, col_gray3,  col_focus  },
 };
 
 /* tagging */
