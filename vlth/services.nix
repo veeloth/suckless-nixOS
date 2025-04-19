@@ -12,7 +12,6 @@
 	  src = ../pkgs/dwm;
 	  }));
 	i3.enable = true;
-	tinywm.enable = true;
 	};
       excludePackages = [ pkgs.xterm ];
       exportConfiguration = true;

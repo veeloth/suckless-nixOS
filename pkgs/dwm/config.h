@@ -7,12 +7,12 @@ static const void startup()
   system("vebar &disown");
   system("vesktop &disown");
   system("librewolf &disown");
-  system("feh --bg-fill \"/home/veeloth/main/wallpapers/312f2e.png\"");
+  system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
   system("nhkd &disown");
   };
 
 /* appearance */
-static const unsigned int borderpx  = 4;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
 static const unsigned int gappih    = 16;
 static const unsigned int gappiv    = 16;
@@ -29,7 +29,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "scientifica:pixelsize=22:antialias=false" };
 static const char dmenufont[]       = "scientifica:pixelsize=22:antialias=false";
 static const char col_gray1[]       = "#1e1d1c";
-static const char col_gray2[]       = "#312f2e";
+static const char col_gray2[]       = "#1e1d1c";
 static const char col_gray3[]       = "#e5e0cf";
 static const char col_gray4[]       = "#1e1d1c";
 static const char col_focus[]       = "#e5e0cf";
