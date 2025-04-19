@@ -11,8 +11,8 @@ in
 environment.systemPackages = with pkgs;
   [
     btop binutils_nogold dissent dmenu
-    fastfetch feh gh git gpick hmcl kitty librewolf
-    mtpaint nasm neovim vlc obsidian
+    fastfetch feh gh git gpick hmcl kitty lf
+    librewolf mtpaint nasm neovim vlc obsidian
     osu-lazer-bin pamixer pandoc qemu scrot
     (st.overrideDerivation
       (old: {
