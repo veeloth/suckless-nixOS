@@ -172,6 +172,21 @@
         "type": "github"
       }
     },
+    "nhkd": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-rVRZ9Gwc3WBLzmPPh9H7BM5FAUyuFVZZf7tQolgichY=",
+        "path": "pkgs/nhkd",
+        "type": "path"
+      },
+      "original": {
+        "path": "pkgs/nhkd",
+        "type": "path"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -212,6 +227,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1744440957,
+        "narHash": "sha256-FHlSkNqFmPxPJvy+6fNLaNeWnF1lZSgqVCl/eWaJRc4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "26d499fc9f1d567283d5d56fcf367edd815dba1d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-24.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1744309437,
         "narHash": "sha256-QZnNHM823am8apCqKSPdtnzPGTy2ZB4zIXOVoBp5+W0=",
         "owner": "NixOS",
@@ -226,7 +257,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1744440957,
         "narHash": "sha256-FHlSkNqFmPxPJvy+6fNLaNeWnF1lZSgqVCl/eWaJRc4=",
@@ -250,7 +281,7 @@
         "git-hooks": "git-hooks",
         "home-manager": "home-manager",
         "nix-darwin": "nix-darwin",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs_3",
         "nuschtosSearch": "nuschtosSearch",
         "treefmt-nix": "treefmt-nix"
       },
@@ -294,7 +325,8 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs",
+        "nhkd": "nhkd",
+        "nixpkgs": "nixpkgs_2",
         "nixvim": "nixvim",
         "vebar": "vebar"
       }
@@ -337,7 +369,7 @@
     },
     "vebar": {
       "inputs": {
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
         "lastModified": 1,

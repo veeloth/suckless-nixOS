@@ -8,6 +8,7 @@ static const void startup()
   system("vestkop &disown");
   system("librewolf &disown");
   system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
+  system("nhkd &disown");
   };
 
 /* appearance */
