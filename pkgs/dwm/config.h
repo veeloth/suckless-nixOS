@@ -1,5 +1,9 @@
 /* See LICENSE file for copyright and license details. */
 
+/* macros */
+
+#define BGPATH /home/veeloth/main/wallpapers/black yellow girl.png
+
 /* behavior */
 
 static const void startup()
@@ -7,7 +11,7 @@ static const void startup()
   system("vebar &disown");
   system("vesktop &disown");
   system("librewolf &disown");
-  system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
+#  system("feh --bg-fill \"\"");
   system("nhkd &disown");
   };
 
