@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./system.nix
       ./services.nix
+      ./shell.nix
       ./users.nix
       ../pkgs/vlth.nix
       nixvim.nixosModules.nixvim
@@ -33,13 +34,6 @@
       relativenumber = true;
       shiftwidth = 2;
     };
-  };
-  programs.bash.shellAliases = {
-    o = ". ~/o";
-    a = ". ~/o .";
-    n = ". ~/o . && nvim";
-    p = ". ~/o ..";
-    f = "sudo nixos-rebuild switch --flake .#";
   };
 
   # This option defines the first version of NixOS you have installed on this particular machine,
