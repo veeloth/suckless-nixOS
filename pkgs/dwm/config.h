@@ -2,7 +2,7 @@
 
 /* macros */
 
-#define BGPATH /home/veeloth/main/wallpapers/black yellow girl.png
+#define BGPATH /home/veeloth/main/wallpapers/black.yellow.girl.png
 
 /* behavior */
 
