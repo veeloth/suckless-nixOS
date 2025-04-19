@@ -7,12 +7,12 @@ static const void startup()
   system("vebar &disown");
   system("vesktop &disown");
   system("librewolf &disown");
-  system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
+  system("feh --bg-fill \"/home/veeloth/main/wallpapers/312f2e.png\"");
   system("nhkd &disown");
   };
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
 static const unsigned int gappih    = 16;
 static const unsigned int gappiv    = 16;
