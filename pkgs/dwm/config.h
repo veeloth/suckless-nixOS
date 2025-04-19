@@ -11,7 +11,7 @@ static const void startup()
   system("vebar &disown");
   system("vesktop &disown");
   system("librewolf &disown");
-#  system("feh --bg-fill \"\"");
+  system("feh --bg-fill \"BGPATH\"");
   system("nhkd &disown");
   };
 
