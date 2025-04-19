@@ -1,0 +1,51 @@
+         _     _       _
+   _ __ | |__ | | ____| |
+  | '_ \| '_ \| |/ / _` |
+  | | | | | | |   < (_| |
+  |_| |_|_| |_|_|\_\__,_|
+  https://uninformativ.de/git/nhkd
+  https://uninformativ.de/bugs.html
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+nano hot key daemon (nhkd) is a very simple hotkey daemon for X11 with
+limited functionality.
+
+It is partially based on code from dwm:
+
+    http://dwm.suckless.org/
+
+If you're looking for a more powerful alternative, have a look at sxhkd:
+
+    https://github.com/baskerville/sxhkd
+
+
+Installation
+------------
+
+The following C libraries are required:
+
+    - libx11
+
+nhkd expects to be run on a POSIX-ish operating system.
+
+You must customize the program by creating your own config.h based on
+config.h.example. In any case, config.h must exist in order to build the
+program.
+
+To build the program and install it to /usr/local:
+
+    $ make
+    # make install
+
+
+Running
+-------
+
+Run it from your ~/.xinitrc:
+
+    while sleep 0.25; do nhkd; done &
+
+The loop ensures that you can easily restart the daemon by killing it.

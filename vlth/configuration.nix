@@ -1,4 +1,4 @@
-{ config, lib, pkgs, nixvim, vebar, ... }:
+{ config, lib, pkgs, nixvim, vebar, nhkd, ... }:
 
 {
   imports =
@@ -9,7 +9,6 @@
       ./users.nix
       ../pkgs/vlth.nix
       nixvim.nixosModules.nixvim
-
     ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];

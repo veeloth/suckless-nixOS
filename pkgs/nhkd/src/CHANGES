@@ -1,0 +1,16 @@
+Release history for nhkd
+
+v22.01  2022-01-15
+  [Fixed]
+  - Reset handler of SIGCHLD to SIG_DFL before launching new processes.
+    On some systems, the handler was retained as SIG_IGN (even after
+    exec()), so the programs we launched were missing SIGCHLD signals,
+    which, in turn, can lead to all kinds of bizarre errors.
+
+v20.06  2020-06-20
+  [Fixed]
+  - Minor: Some tabs sneaked into the source code, because this project
+    is based on dwm. They have been replaced by four spaces.
+
+v20.05  2020-05-24
+  - This is the initial release of nhkd.

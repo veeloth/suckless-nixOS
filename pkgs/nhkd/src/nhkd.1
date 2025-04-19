@@ -1,0 +1,38 @@
+.TH nhkd 1 "2020-05-20" "nhkd" "User Commands"
+.\" --------------------------------------------------------------------
+.SH NAME
+nhkd \- nano hot key daemon for X11
+.\" --------------------------------------------------------------------
+.SH SYNOPSIS
+\fBnhkd\fP
+.\" --------------------------------------------------------------------
+.SH DESCRIPTION
+Grabs keys and mouse buttons as configured, spawns commands.
+.\" --------------------------------------------------------------------
+.SH OPTIONS
+There are no command line options.
+.\" --------------------------------------------------------------------
+.SH CONFIGURATION
+The program must be configured by creating a \fIconfig.h\fP file. You
+must then recompile the program.
+.P
+\fIconfig.h.example\fP is distributed along with the source code. It
+explains the basic structure and the options that you can use.
+.\" --------------------------------------------------------------------
+.SH ENVIRONMENT
+.P
+.TP
+.B DISPLAY
+Points to the X11 display on which to grab keys.
+.\" --------------------------------------------------------------------
+.SH LICENSE
+\fBnhkd\fP is released under the MIT license. See the accompanying
+\fILICENSE\fP file.
+.\" --------------------------------------------------------------------
+.SH HISTORY
+\fBnhkd\fP was originally written by Peter Hofmann, using some code from
+\fBdwm\fP. The project was started in May 2020.
+.\" --------------------------------------------------------------------
+.SH "SEE ALSO"
+.BR dwm (1),
+.BR sxhkd (1).

@@ -1,7 +1,7 @@
-{ config, lib, pkgs, vebar, ... }:
+{ config, lib, pkgs, vebar, nhkd, ... }:
 
 let
-  localPkgs = [ vebar.packages."x86_64-linux".default ];
+  localPkgs = [ vebar.packages."x86_64-linux".default nhkd.packages."x86_64-linux".default ];
 in
 {
 environment.systemPackages = with pkgs;
@@ -18,5 +18,4 @@ environment.systemPackages = with pkgs;
     tabbed tinycc tmux tuir xclip
     vesktop yt-dlp zathura zulu23
   ] ++ localPkgs;
-#environment.systemPackages = environment.systemPackages ++ [vebar.packages."x86_64-linux".vebar];
 }

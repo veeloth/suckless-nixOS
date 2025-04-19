@@ -1593,10 +1593,7 @@ setmfact(const Arg *arg)
 void
 setup(void)
 {
-	system("vebar &disown");
-	system("vesktop &disown");
-	system("librewolf &disown");
-	system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
+	startup();
 	int i;
 	XSetWindowAttributes wa;
 	Atom utf8string;

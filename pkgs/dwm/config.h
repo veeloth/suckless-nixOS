@@ -1,5 +1,15 @@
 /* See LICENSE file for copyright and license details. */
 
+/* behavior */
+
+static const void startup()
+  {
+  system("vebar &disown");
+  system("vestkop &disown");
+  system("librewolf &disown");
+  system("feh --bg-fill \"/home/veeloth/main/wallpapers/black yellow girl.png\"");
+  };
+
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
