@@ -23,9 +23,6 @@ static int smartgaps		    = 0;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
-static const int vertpad 	    = 16;
-static const int sidepad	    = 16;
-
 #define FORCE_VSPLIT 1
 #include "vanitygaps.c"
 
