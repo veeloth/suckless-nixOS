@@ -7,4 +7,9 @@
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   time.timeZone = "America/Argentina/Buenos_Aires";
   i18n.defaultLocale = "en_US.UTF-8";
+
+#  xdg.mime.defaultApplications =
+#    {
+#    "inode/directory" = "st.desktop"; #impure line TODO fix
+#    };
 }

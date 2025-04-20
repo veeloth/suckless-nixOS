@@ -2,7 +2,8 @@
 
 pkgs.stdenv.mkDerivation
   {
-  name = "vebar";
+  pname = "vebar";
+  version = "0.1";
   src = ./src;
 
   buildPhase =
