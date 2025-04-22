@@ -785,7 +785,7 @@ nrowgrid(Monitor *m)
 static void
 tile(Monitor *m)
 {
-	unsigned int i, n;
+	unsigned int i, n, bw;
 	int oh, ov, ih, iv;
 	int mx = 0, my = 0, mh = 0, mw = 0;
 	int sx = 0, sy = 0, sh = 0, sw = 0;
@@ -796,6 +796,10 @@ tile(Monitor *m)
 	getgaps(m, &oh, &ov, &ih, &iv, &n);
 	if (n == 0)
 		return;
+	if (n == 1)
+		bw = 0;
+	else
+		bw = borderpx;
 
 	sx = mx = m->wx + ov;
 	sy = my = m->wy + oh;
@@ -813,10 +817,10 @@ tile(Monitor *m)
 
 	for (i = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
 		if (i < m->nmaster) {
-			resize(c, mx, my, mw - (2*c->bw), mh * (c->cfact / mfacts) + (i < mrest ? 1 : 0) - (2*c->bw), 0);
+			resize(c, mx, my, mw - 2*bw, mh * (c->cfact / mfacts) + (i < mrest ? 1 : 0) - 2*bw, bw, 0);
 			my += HEIGHT(c) + ih;
 		} else {
-			resize(c, sx, sy, sw - (2*c->bw), sh * (c->cfact / sfacts) + ((i - m->nmaster) < srest ? 1 : 0) - (2*c->bw), 0);
+			resize(c, sx, sy, sw - 2*bw, sh * (c->cfact / sfacts) + ((i - m->nmaster) < srest ? 1 : 0) - 2*bw), 0);
 			sy += HEIGHT(c) + ih;
 		}
 }
