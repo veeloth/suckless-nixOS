@@ -18,7 +18,7 @@ static const unsigned int gappih    = 16;
 static const unsigned int gappiv    = 16;
 static const unsigned int gappoh    = 16;
 static const unsigned int gappov    = 16;
-static int smartgaps		    = 0;
+static int smartgaps		    = 1;
 
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
