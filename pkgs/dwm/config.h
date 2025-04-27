@@ -12,7 +12,7 @@ static const void startup()
   };
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 8;       /* snap pixel */
 static const unsigned int gappih    = 16;
 static const unsigned int gappiv    = 16;
