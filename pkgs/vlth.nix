@@ -10,7 +10,7 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    btop binutils_nogold dmenu docker qemu
+    btop binutils_nogold clang dmenu qemu
     fastfetch feh gh git gpick hmcl kitty lf
     librewolf mtpaint nasm neovim vlc obs-studio
     obsidian osu-lazer-bin pamixer pandoc qemu scrot
