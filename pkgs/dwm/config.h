@@ -6,7 +6,7 @@ static const void startup()
   {
   system("vebar &disown");
   system("vesktop &disown");
-  system("librewolf &disown");
+  system("librewolf web.whatsapp.com &disown");
   system("feh --bg-fill \"/home/veeloth/main/wallpapers/1e1d1c.png\"");
   system("nhkd &disown");
   };
@@ -43,7 +43,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "fl", "ch", "wk", "br", "ob", "bt", "gm", "pk", "tr" };
+static const char *tags[] = { "fl", "ch", "wk", "br", "ob", "bt", "gm", "pk", "mu" };
 
 static const Rule rules[] = {
 	/* xprop(1):
