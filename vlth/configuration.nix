@@ -34,6 +34,16 @@
       relativenumber = true;
       shiftwidth = 2;
     };
+    plugins.lsp =
+      {
+      enable = true;
+      servers =
+	{
+	clangd.enable = true;#C / C++
+	nil_ls.enable = true;#nix
+	marksman.enable = true;#markdown
+	};
+      };
   };
 
   # This option defines the first version of NixOS you have installed on this particular machine,
