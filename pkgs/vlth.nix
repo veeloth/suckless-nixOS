@@ -1,11 +1,10 @@
-{ config, lib, pkgs, vebar, nhkd, pollymc, ... }:
+{ config, lib, pkgs, vebar, nhkd, ... }:
 
 let
   ext-pkgs =
     [
     vebar.packages."x86_64-linux".default
     nhkd.packages."x86_64-linux".default
-    pollymc.packages."x86_64-linux".default
     ];
 in
 {
