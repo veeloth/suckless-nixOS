@@ -10,8 +10,8 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    btop binutils_nogold clang dmenu
-    fastfetch feh ffmpeg gh git gpick hmcl kitty lf
+    abaddon btop binutils_nogold clang cordless dmenu equicord
+    fastfetch feh ffmpeg gh git gpick hmcl legcord kitty lf
     librewolf mtpaint mpv nasm neovim vlc obs-studio
     obsidian osu-lazer-bin pamixer qemu scrot
     (st.overrideDerivation
