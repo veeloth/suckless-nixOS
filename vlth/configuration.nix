@@ -22,7 +22,6 @@
   fonts.packages = with pkgs;
     [
     scientifica
-    hermit
     ];
 
   programs.nixvim =

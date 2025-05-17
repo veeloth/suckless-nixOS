@@ -10,7 +10,7 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    btop binutils_nogold clang cordless dmenu dissent
+    btop binutils_nogold clang cordless dmenu dissent discordo
     fastfetch feh ffmpeg gh git gpick gruvbox-dark-gtk hmcl kitty lf
     librewolf mtpaint mpv nasm neovim vlc obs-studio
     obsidian osu-lazer-bin pamixer qemu scrot

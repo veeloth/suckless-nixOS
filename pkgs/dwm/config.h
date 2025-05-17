@@ -9,6 +9,7 @@ static const void startup()
   system("librewolf web.whatsapp.com &disown");
   system("feh --bg-fill \"/home/veeloth/main/wallpapers/1e1d1c.png\"");
   system("nhkd &disown");
+  system("~/dcstart &disown");//we use a bashscript to start discord so it we don't expose the token on github when uploading the repo
   };
 
 /* appearance */
