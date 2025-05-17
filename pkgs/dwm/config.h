@@ -5,7 +5,7 @@
 static const void startup()
   {
   system("vebar &disown");
-  system("vesktop &disown");
+  //system("vesktop &disown");
   system("librewolf web.whatsapp.com &disown");
   system("feh --bg-fill \"/home/veeloth/main/wallpapers/1e1d1c.png\"");
   system("nhkd &disown");
