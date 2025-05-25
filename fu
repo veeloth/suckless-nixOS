@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+sudo nix flake update
+git add .
+git commit -m "updated flake"
+f
