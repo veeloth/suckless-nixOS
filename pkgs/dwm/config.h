@@ -52,13 +52,13 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "vesktop",  NULL,	  NULL,	      1 << 1,	    0,           -1 },
-	{ "librewolf",NULL,	  NULL,	      1 << 3,	    0,           -1 },
-	{ "obsidian", NULL,	  NULL,	      1 << 4,	    0,           -1 },
+	{ "vesktop",  NULL,	  NULL,	      1 << 4,	    0,           -1 },
+	{ "librewolf",NULL,	  NULL,	      1 << 6,	    0,           -1 },
+	{ "obsidian", NULL,	  NULL,	      1 << 7,	    0,           -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
