@@ -2,8 +2,8 @@
   description = "veeloth's suckless flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-    nixvim.url = "github:nix-community/nixvim/nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixvim.url = "github:nix-community/nixvim/nixos-25.05";
     vebar.url = "path:pkgs/vebar";
     nhkd.url = "path:pkgs/nhkd";
   };

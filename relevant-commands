@@ -1,2 +1,0 @@
-build system with flake: sudo nixos-rebuild switch --flake <path>#<key>
-example: sudo nixos-rebuild switch --flake ./system/vlth-i3-1#vlth-i3-1
