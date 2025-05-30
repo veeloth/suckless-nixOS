@@ -72,15 +72,14 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-rVRZ9Gwc3WBLzmPPh9H7BM5FAUyuFVZZf7tQolgichY=",
         "path": "pkgs/nhkd",
         "type": "path"
       },
       "original": {
         "path": "pkgs/nhkd",
         "type": "path"
-      }
+      },
+      "parent": []
     },
     "nixpkgs": {
       "locked": {
@@ -234,15 +233,14 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-2QdJ0UzOpuoRfQUTwgIP1eSQFS+Vk7weL6L+ohjy4S8=",
         "path": "pkgs/vebar",
         "type": "path"
       },
       "original": {
         "path": "pkgs/vebar",
         "type": "path"
-      }
+      },
+      "parent": []
     }
   },
   "root": "root",
