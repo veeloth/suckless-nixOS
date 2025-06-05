@@ -53,7 +53,7 @@
 	  version = "2025.605.3";
 	  src =
 	  {
-	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
+	    url = "https://github.com/ppy/osu/releases/download/2025.605.3/osu.AppImage";
 	    hash = "";
 	  };
 	});
