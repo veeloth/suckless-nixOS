@@ -53,17 +53,17 @@
 	  version = "2025.605.3";
 	  src =
 	  {
-	  aarch64-darwin = fetchzip {
+	  aarch64-darwin = pkgs.fetchzip {
 	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.app.Apple.Silicon.zip";
 	    hash = "";
 	    stripRoot = false;
 	  };
-	  x86_64-darwin = fetchzip {
+	  x86_64-darwin = pkgs.fetchzip {
 	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.app.Intel.zip";
 	    hash = "";
 	    stripRoot = false;
 	  };
-	  x86_64-linux = fetchurl {
+	  x86_64-linux = pkgs.fetchurl {
 	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
 	    hash = "";
 	  };};
