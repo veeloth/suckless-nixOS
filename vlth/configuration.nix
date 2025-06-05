@@ -45,6 +45,32 @@
       };
   };
 
+  # overlays
+  nixpkgs.overlays = [
+    (final: prev:
+      {
+	osu-lazer-bin = prev.osu-lazer-bin.overrideAttrs (previousAttrs: rec {
+	  version = "2025.605.3";
+	  src =
+	  {
+	  aarch64-darwin = fetchzip {
+	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.app.Apple.Silicon.zip";
+	    hash = "";
+	    stripRoot = false;
+	  };
+	  x86_64-darwin = fetchzip {
+	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.app.Intel.zip";
+	    hash = "";
+	    stripRoot = false;
+	  };
+	  x86_64-linux = fetchurl {
+	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
+	    hash = "";
+	  };
+	});
+      })
+  ];
+
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
   #
