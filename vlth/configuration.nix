@@ -67,8 +67,8 @@
 	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
 	    hash = "";
 	  };};
-	};)
-      };)
+	});
+      })
   ];
 
   # This option defines the first version of NixOS you have installed on this particular machine,
