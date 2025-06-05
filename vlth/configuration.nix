@@ -55,7 +55,7 @@
 	  {
 	    url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
 	    hash = "";
-	  };};
+	  };
 	});
       })
   ];
