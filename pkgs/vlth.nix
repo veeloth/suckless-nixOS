@@ -25,8 +25,14 @@ environment.systemPackages = with pkgs;
 
 nixpkgs.config.packageOverrides = pkgs: {
     appimage-run = pkgs.appimage-run.override {
-      runtimeInputs =
-        [pkgs.icu];
+      nativeBuildInputs = [ pkgs.makeWrapper ];
+      postFixup =
+	''
+	wrapProgram $out/bin/osu! \
+	  --set PATH ${pkgs.lib.makeBinPath (with pkgs; [
+	  icu
+	])}
+	'';
       };
     };
 
