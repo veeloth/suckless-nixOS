@@ -22,7 +22,8 @@ environment.systemPackages = with pkgs;
     tinycc tldr tmux xclip
     vesktop yt-dlp zathura zulu23
   ] ++ ext-pkgs;
-environment.packageOverrides = pkgs: {
+
+pkgs.config.packageOverrides = pkgs: {
     appimage-run = pkgs.appimage-run.override {
       runtimeInputs =
         [pkgs.icu];
