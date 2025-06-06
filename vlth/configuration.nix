@@ -47,10 +47,11 @@
 
   # overlays
 
-  # ev
-  environment.sessionVariables = rec
-    {
-    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1;
+  packageOverrides = pkgs: {
+    appimage-run = pkgs.appimage-run.override {
+      runtimeInputs =
+	[pkgs.icu];
+      };
     };
 
   # This option defines the first version of NixOS you have installed on this particular machine,

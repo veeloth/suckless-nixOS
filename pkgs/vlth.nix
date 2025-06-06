@@ -11,7 +11,7 @@ in
 environment.systemPackages = with pkgs;
   [
     appimage-run btop binutils_nogold clang dmenu discordo
-    fastfetch feh ffmpeg gh git gpick hmcl icu kitty lf
+    fastfetch feh ffmpeg gh git gpick hmcl kitty lf
     librewolf mpv nasm neovim vlc obs-studio
     obsidian osu-lazer-bin pamixer qemu scrot
     (st.overrideDerivation
