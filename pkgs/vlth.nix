@@ -22,18 +22,4 @@ environment.systemPackages = with pkgs;
     tinycc tldr tmux xclip
     vesktop yt-dlp zathura zulu23
   ] ++ ext-pkgs;
-
-nixpkgs.config.packageOverrides = pkgs: {
-    appimage-run = pkgs.appimage-run.override {
-      nativeBuildInputs = [ pkgs.makeWrapper ];
-      postFixup =
-	''
-	wrapProgram $out/bin/osu! \
-	  --set PATH ${pkgs.lib.makeBinPath (with pkgs; [
-	  icu
-	])}
-	'';
-      };
-    };
-
 }
