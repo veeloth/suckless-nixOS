@@ -23,7 +23,7 @@ environment.systemPackages = with pkgs;
     vesktop yt-dlp zathura zulu23
   ] ++ ext-pkgs;
 
-pkgs.config.packageOverrides = pkgs: {
+nixpkgs.config.packageOverrides = pkgs: {
     appimage-run = pkgs.appimage-run.override {
       runtimeInputs =
         [pkgs.icu];
