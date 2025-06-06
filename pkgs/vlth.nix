@@ -14,7 +14,7 @@ environment.systemPackages = with pkgs;
     appimage-run btop binutils_nogold clang dmenu discordo
     fastfetch feh ffmpeg gh git gpick hmcl kitty lf
     librewolf mpv nasm neovim vlc obs-studio
-    obsidian pamixer qemu scrot
+    obsidian p7zip pamixer qemu scrot
     (st.overrideDerivation
       (old: {
       src = ./st;
