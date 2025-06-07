@@ -2,10 +2,10 @@
 
 let
   pname = "osu";
-  version = "2025.605.3";
+  version = "2025.607.0";
   src = pkgs.fetchurl
     {
-    url = "https://github.com/ppy/osu/releases/download/2025.605.3/osu.AppImage";
+    url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
     hash = "sha256-k09fyaSfGZgC7VoDp68+xb5wxiXGQllXKqCpz+7k0So=";
     };
 in
