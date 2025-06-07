@@ -6,7 +6,7 @@ let
   src = pkgs.fetchurl
     {
     url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
-    hash = "sha256-k09fyaSfGZgC7VoDp68+xb5wxiXGQllXKqCpz+7k0So=";
+    hash = "sha256-jG3KedllnVNd5TLSkKYae2V8CzN90g5lJhT4EKI+nuk=";
     };
 in
   pkgs.appimageTools.wrapType2 {
