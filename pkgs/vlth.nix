@@ -11,10 +11,10 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    appimage-run btop binutils_nogold clang dmenu discordo
+    appimage-run btop binutils_nogold clang ctags dmenu discordo
     fastfetch feh ffmpeg gh git gpick hmcl kitty lf
     librewolf mpv nasm neovim vlc obs-studio
-    obsidian p7zip pamixer qemu scrot
+    obsidian p7zip pamixer qemu scrot sdl3
     (st.overrideDerivation
       (old: {
       src = ./st;
