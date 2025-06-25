@@ -13,7 +13,7 @@ environment.systemPackages = with pkgs;
   [
     appimage-run btop binutils_nogold clang ctags dmenu discordo
     fastfetch feh ffmpeg gh git gpick hmcl kitty lf
-    librewolf mpv nasm neovim quaternion vlc obs-studio
+    librewolf mpv nasm neovim fluffychat vlc obs-studio
     obsidian p7zip pamixer qemu scrot sdl3
     (st.overrideDerivation
       (old: {
