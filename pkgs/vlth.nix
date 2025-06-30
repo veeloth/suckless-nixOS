@@ -11,7 +11,7 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    appimage-run btop binutils_nogold clang ctags dmenu discordo
+    appimage-run btop binutils_nogold caligula clang universal-ctags dmenu discordo
     fastfetch feh ffmpeg gh git gpick hmcl kitty lf
     librewolf mpv nasm neovim fractal vlc obs-studio
     obsidian p7zip pamixer qemu scrot sdl3
