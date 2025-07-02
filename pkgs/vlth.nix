@@ -21,6 +21,6 @@ environment.systemPackages = with pkgs;
       })
     )
     tinycc tldr tmux xclip
-    vesktop yt-dlp zathura zulu23
+    vesktop w3m-nographics yt-dlp zathura zulu23
   ] ++ ext-pkgs;
 }
