@@ -11,16 +11,16 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    appimage-run btop binutils_nogold caligula clang universal-ctags dmenu discordo
+    btop binutils_nogold caligula clang universal-ctags dmenu discordo
     fastfetch feh ffmpeg gh git gpick hmcl kitty lf
-    librewolf mpv nasm neovim fractal vlc obs-studio
-    obsidian p7zip pamixer qemu scrot sdl3
+    librewolf mpv nasm neovim vlc obs-studio
+    obsidian p7zip pamixer qemu scrot
     (st.overrideDerivation
       (old: {
       src = ./st;
       })
     )
     tinycc tldr tmux xclip
-    vesktop w3m-nographics yt-dlp zathura zulu23
+    w3m-nographics yt-dlp zathura zulu23
   ] ++ ext-pkgs;
 }
