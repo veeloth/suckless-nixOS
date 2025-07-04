@@ -3,7 +3,7 @@ description = "nhkd flake";
 
 inputs =
   {
-  nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+  nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
   };
 
 outputs = { self, nixpkgs }:
