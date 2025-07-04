@@ -3,7 +3,7 @@ description = "vebar flake";
 
 inputs =
   {
-  nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+  nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
   };
 
 outputs = { self, nixpkgs }:
