@@ -118,8 +118,8 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-        "#ffa5a5",
-	"#ECEADF",
+        "#ECEADF",
+	"#A5FFA5",
 	"#ECEADF",
 	"#0B090B"
 /* default foreground colour */
