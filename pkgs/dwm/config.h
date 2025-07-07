@@ -32,11 +32,11 @@ static const int sidepad	    = 16;
 
 static const char *fonts[]          = { "scientifica:pixelsize=22:antialias=false" };
 static const char dmenufont[]       = "scientifica:pixelsize=22:antialias=false";
-static const char col_gray1[]       = "#0D060A";
-static const char col_gray2[]       = "#0D060A";
-static const char col_gray3[]       = "#e5e0cf";
-static const char col_gray4[]       = "#0D060A";
-static const char col_focus[]       = "#e5e0cf";
+static const char col_gray1[]       = "#0B090B";
+static const char col_gray2[]       = "#0B090B";
+static const char col_gray3[]       = "#ECEADF";
+static const char col_gray4[]       = "#0B090B";
+static const char col_focus[]       = "#ECEADF";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
