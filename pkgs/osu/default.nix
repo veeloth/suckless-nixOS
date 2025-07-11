@@ -2,11 +2,12 @@
 
 let
   pname = "osu";
-  version = "2025.710.0";
+  version = "2025.710.0-lazer";
   src = pkgs.fetchurl
     {
     url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
-    hash = "sha256-jG3KedllnVNd5TLSkKYae2V8CzN90g5lJhT4EKI+nuk=";
+    hash = "sha256-Tfm75+jkSAqyNBkN3cVrx3hyw+Ai3lKa6ZIo47x2Rns=";
+    /*remember to update the hash when changing versions!*/
     };
 in
   pkgs.appimageTools.wrapType2 {
