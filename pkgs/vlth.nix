@@ -11,7 +11,7 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    btop binutils_nogold caligula usbimager clang
+    btop binutils_nogold caligula clang
     universal-ctags dmenu discordo
     fastfetch feh ffmpeg gh git gpick hmcl lf
     librewolf mpv nasm neovim vlc obs-studio

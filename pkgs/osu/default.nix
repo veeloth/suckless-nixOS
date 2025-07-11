@@ -2,7 +2,7 @@
 
 let
   pname = "osu";
-  version = "2025.607.0";
+  version = "2025.710.0";
   src = pkgs.fetchurl
     {
     url = "https://github.com/ppy/osu/releases/download/${version}/osu.AppImage";
