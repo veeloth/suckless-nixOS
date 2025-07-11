@@ -11,10 +11,11 @@ in
 {
 environment.systemPackages = with pkgs;
   [
-    btop binutils_nogold caligula clang universal-ctags dmenu discordo
-    fastfetch feh ffmpeg gh git gpick hmcl kitty lf
+    btop binutils_nogold caligula usbimager clang
+    universal-ctags dmenu discordo
+    fastfetch feh ffmpeg gh git gpick hmcl lf
     librewolf mpv nasm neovim vlc obs-studio
-    obsidian p7zip pamixer qemu scrot
+    obsidian p7zip pamixer scrot
     (st.overrideDerivation
       (old: {
       src = ./st;
