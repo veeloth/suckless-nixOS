@@ -5,7 +5,7 @@ let
     [
     vebar.packages."x86_64-linux".default
     nhkd.packages."x86_64-linux".default
-    osu.packages."x86_64-linux".default
+    #osu.packages."x86_64-linux".default#potential injury? won't play until july 20th
     ];
 in
 {
