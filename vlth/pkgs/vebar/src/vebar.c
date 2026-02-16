@@ -9,7 +9,7 @@
 void printb (char * bar)
   {
   char command[255] = COMMAND_BEGGINING;
-  strcat(&command, bar);
+  strcat(command, bar);
   strcat(command, COMMAND_ENDING);
   system(command);
   };

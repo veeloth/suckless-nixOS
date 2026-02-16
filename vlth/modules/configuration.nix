@@ -1,4 +1,4 @@
-{ config, lib, pkgs, nixvim, vebar, nhkd, ... }:
+{ config, lib, pkgs, nvf, vebar, nhkd, ... }:
 
 {
   imports =
@@ -9,7 +9,7 @@
       ./shell.nix
       ./users.nix
       ../pkgs/vlth.nix
-      nixvim.nixosModules.nixvim
+      nvf.nixosModules.nvf
     ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
@@ -18,32 +18,75 @@
   nixpkgs.config.allowUnfree = true;
   documentation.dev.enable = true;
   documentation.man.man-db.enable = true;
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   fonts.packages = with pkgs;
     [
     scientifica
     ];
 
-  programs.nixvim =
-  {
-    enable = true;
-    opts =
+  programs.nvf =
     {
-      number = true;
-      relativenumber = true;
-      shiftwidth = 2;
-    };
-    plugins.lsp =
+    enable = true;
+    settings.vim.lsp.enable = true;
+    settings.vim =
       {
-      enable = true;
-      servers =
-	{
-	clangd.enable = true;#C / C++
-	nil_ls.enable = true;#nix
-	marksman.enable = true;#markdown
-	};
+      lineNumberMode = "relNumber";
+      options.shiftwidth = 2;
+      options.autoindent = false;
+      spellcheck.enable = true;
+
+      autocomplete =    
+        {
+        nvim-cmp.enable = true;
+        };
+
+      languages =
+        {
+        enableFormat = true;
+        enableTreesitter = true;
+        enableExtraDiagnostics = true;
+
+        #nix.enable = true;
+        markdown.enable = true;
+        clang.enable = true;
+
+        css.enable = true;
+        html.enable = true;
+        ts.enable = true;
+
+        go.enable = true;
+        lua.enable = true;
+        python.enable = true;
+
+        clang.treesitter.enable = true;
+        };
+
+      filetree.nvimTree.setupOpts.view =
+        {
+        number = true;
+        relativenumber = true;
+        shiftwidth = 2;
+        };
+
+      visuals.indent-blankline.setupOpts.indent.repeat_linebreak = true;
+      
+      statusline.lualine =
+          {
+          enable = true;
+          theme = "gruvbox";
+          };
+
+      theme =
+        {
+        enable = true;
+        name = "gruvbox";
+        style = "dark";
+        transparent = true;
+        };
       };
-  };
+    };
 
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
