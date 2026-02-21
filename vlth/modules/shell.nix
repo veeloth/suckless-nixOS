@@ -7,7 +7,5 @@
     n = ". ~/o . && nvim";
     p = ". ~/o ..";
     f = "sudo nixos-rebuild switch --flake .#";
-    clip = "xclip -selection clipboard -i";
-    hakuneko = "xclip -selection clipboard -i";
   };
 }
