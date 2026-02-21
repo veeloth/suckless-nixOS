@@ -21,7 +21,7 @@ environment.systemPackages = with pkgs;
       src = ./st;
       })
     )
-    xfce.thunar tinycc tldr tmux unison
+    tinycc tldr tmux unison
     w3m-nographics xclip yt-dlp zathura zulu
   ] ++ ext-pkgs;
 }
