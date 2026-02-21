@@ -10,7 +10,7 @@ pkgs.stdenv.mkDerivation
     [
     pkgs.pkg-config
     pkgs.gnumake
-    pkgs.xorg.libX11
+    pkgs.libX11
     ];
 
   buildPhase =
