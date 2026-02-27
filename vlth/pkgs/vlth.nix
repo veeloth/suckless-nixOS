@@ -14,7 +14,7 @@ environment.systemPackages = with pkgs;
     bluetui btop binutils_nogold caligula clang cron
     universal-ctags dmenu discordo
     fastfetch feh gh git gpick hmcl keynav lf
-    librewolf jellyfin-ffmpeg mpv nautilus nasm neovim nix-search-cli vlc obs-studio
+    librewolf jellyfin-ffmpeg man-pages mpv nautilus nasm neovim nix-search-cli vlc obs-studio
     obsidian p7zip pamixer python314 scrot
     (st.overrideDerivation
       (old: {
